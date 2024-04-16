@@ -1,0 +1,26 @@
+-r requirements-sys.txt
+celery[mongodb]>=5.3.1,<5.4
+colander
+cornice>=5
+cornice_swagger>=0.7.0
+dicttoxml>=1.7.16
+# flag --paste breaks for >20 unless using pserve
+gunicorn<20; python_version < "3.5"  # pyup: ignore
+gunicorn>=20
+magpie @ git+https://github.com/Ouranosinc/Magpie@3.34.0
+paste
+pastedeploy
+pymongo[srv]>=4.4,<5  # required to work with pinned celery
+pyramid>=1.10.2,<2
+pyramid_mako>=1.0.2
+pyramid_celery
+python-dotenv
+pyyaml>=5.1
+requests
+requests_file
+schema
+simplejson
+threddsclient==0.4.4
+typing_extensions
+watchdog
+webob
