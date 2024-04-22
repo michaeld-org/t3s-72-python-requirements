@@ -1,2 +1,0 @@
-requests
-opensearch-py==2.2.0
