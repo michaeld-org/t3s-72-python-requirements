@@ -1,15 +1,22 @@
-from setuptools import setup, find_packages
+#from os.path import abspath, dirname, join
 
+from setuptools import find_packages, setup  # type: ignore
+
+
+#if __name__ == "__main__":
 setup(
-    name='ExamplePackage',
-    version='0.1',
+    name="clmv2-opensearch-client",
+    version="1.0.11",  # PEP-440 (e.g. 1.2.dev1, 1.1a1 etc)
+    url="https://git.autodesk.com/IBP/clmv2-opensearch-client.git",
+    author="CLMv2 Team - Daedalus",
+    description="Client to manage data stored in opensearch(AWS)",
+    #long_description=README_MD,
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=[
-        'numpy',  # An example of a third-party package as a dependency
+        # Do not restrict requests version to avoid conflicting
+        # dependancies on other projects
+        "requests",
+        "opensearch-py==2.2.0",
     ],
-    python_requires='>=3.6',
-    author='Michael',
-    author_email='michael.dahis@snyk.io',
-    description='A simple example package',
-    license='MIT',
 )

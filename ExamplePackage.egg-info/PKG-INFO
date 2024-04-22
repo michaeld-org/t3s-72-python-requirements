@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ExamplePackage
+Version: 0.1
+Summary: A simple example package
+Author: Michael
+Author-email: michael.dahis@snyk.io
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: numpy
