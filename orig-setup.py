@@ -2,15 +2,9 @@ from os.path import abspath, dirname, join
 
 from setuptools import find_packages, setup  # type: ignore
 
-readme_path = join(dirname(abspath(__file__)), "README.md")
-try:
-    with open(readme_path) as readme_file:
-        README_MD = readme_file.read()
-except FileNotFoundError:
-    README_MD = "Default Description if README not found."
+README_MD = open(join(dirname(abspath(__file__)), "README.md")).read()
 
-
-#if __name__ == "__main__":
+if __name__ == "__main__":
     setup(
         name="clmv2-opensearch-client",
         version="1.0.11",  # PEP-440 (e.g. 1.2.dev1, 1.1a1 etc)
@@ -27,4 +21,3 @@ except FileNotFoundError:
             "opensearch-py==2.2.0",
         ],
     )
-
