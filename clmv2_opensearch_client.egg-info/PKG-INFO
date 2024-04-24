@@ -7,3 +7,5 @@ Author: CLMv2 Team - Daedalus
 Description-Content-Type: text/markdown
 Requires-Dist: requests
 Requires-Dist: opensearch-py==2.2.0
+
+README.md

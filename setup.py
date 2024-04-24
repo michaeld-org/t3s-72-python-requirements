@@ -1,30 +1,22 @@
 from os.path import abspath, dirname, join
-
 from setuptools import find_packages, setup  # type: ignore
 
-readme_path = join(dirname(abspath(__file__)), "README.md")
-try:
-    with open(readme_path) as readme_file:
-        README_MD = readme_file.read()
-except FileNotFoundError:
-    README_MD = "Default Description if README not found."
+
+with open('README.md', 'r') as f:
+    long_description = f.read()
 
 
-#if __name__ == "__main__":
-    setup(
-        name="clmv2-opensearch-client",
-        version="1.0.11",  # PEP-440 (e.g. 1.2.dev1, 1.1a1 etc)
-        url="https://git.autodesk.com/IBP/clmv2-opensearch-client.git",
-        author="CLMv2 Team - Daedalus",
-        description="Client to manage data stored in opensearch(AWS)",
-        long_description=README_MD,
-        long_description_content_type="text/markdown",
-        packages=find_packages(),
-        install_requires=[
-            # Do not restrict requests version to avoid conflicting
-            # dependancies on other projects
-            "requests",
-            "opensearch-py==2.2.0",
-        ],
-    )
-
+setup(
+    name="clmv2-opensearch-client",
+    version="1.0.11",
+    url="https://git.autodesk.com/IBP/clmv2-opensearch-client.git",
+    author="CLMv2 Team - Daedalus",
+    description="Client to manage data stored in opensearch(AWS)",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    packages=find_packages(),
+    install_requires=[
+        "requests",
+        "opensearch-py==2.2.0",
+    ],
+)
