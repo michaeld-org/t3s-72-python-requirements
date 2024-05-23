@@ -9,7 +9,7 @@ prometheus-flask-exporter
 opentelemetry-exporter-otlp
 opentelemetry-instrumentation-flask
 pyyaml
-setuptools>=65.5.1
+setuptools<67
 werkzeug>=3.0.1
 numpy>=1.24.3
 pandas
