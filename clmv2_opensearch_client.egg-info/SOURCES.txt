@@ -1,7 +1,0 @@
-README.md
-setup.py
-clmv2_opensearch_client.egg-info/PKG-INFO
-clmv2_opensearch_client.egg-info/SOURCES.txt
-clmv2_opensearch_client.egg-info/dependency_links.txt
-clmv2_opensearch_client.egg-info/requires.txt
-clmv2_opensearch_client.egg-info/top_level.txt
