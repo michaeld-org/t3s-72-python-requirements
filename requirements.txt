@@ -20,7 +20,7 @@ opentelemetry-instrumentation-flask
 
 pyyaml
 
-setuptools>=65.5.1
+setuptools<67
 
 werkzeug>=3.0.1
 
