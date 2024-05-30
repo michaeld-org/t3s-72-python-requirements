@@ -28,8 +28,6 @@ numpy>=1.24.3
 
 pandas
 
-better-profanity==0.7.0
-
 scrubadub>=2.0.1
 
 spacy
