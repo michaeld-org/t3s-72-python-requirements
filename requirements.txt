@@ -17,23 +17,3 @@ prometheus-flask-exporter
 opentelemetry-exporter-otlp
 
 opentelemetry-instrumentation-flask
-
-pyyaml
-
-setuptools>=65.5.1
-
-werkzeug>=3.0.1
-
-numpy>=1.24.3
-
-pandas
-
-better-profanity==0.6.1
-
-scrubadub>=2.0.1
-
-spacy
-
-scipy==1.11.4
-
-openpyxl
