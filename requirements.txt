@@ -1,5 +1,5 @@
-spacy
+pandas
 
-scipy==1.11.4
+better-profanity==0.6.1
 
-openpyxl
+scrubadub>=2.0.1
