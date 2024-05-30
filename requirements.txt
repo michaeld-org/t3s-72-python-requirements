@@ -1,19 +1,19 @@
-flask
+pyyaml
 
-flask-cors
+setuptools>=65.5.1
 
-flask-openapi3
+werkzeug>=3.0.1
 
-pydantic
+numpy>=1.24.3
 
-gunicorn
+pandas
 
-gevent>=23.9.1
+better-profanity==0.6.1
 
-sentry-sdk[flask]
+scrubadub>=2.0.1
 
-prometheus-flask-exporter
+spacy
 
-opentelemetry-exporter-otlp
+scipy==1.11.4
 
-opentelemetry-instrumentation-flask
+openpyxl
