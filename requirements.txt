@@ -35,3 +35,4 @@ spacy
 scipy==1.11.4
 
 openpyxl
+opentelemetry-instrumentation>=0.41b0 # not directly required, pinned by Snyk to avoid a vulnerability
